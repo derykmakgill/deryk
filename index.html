@@ -1,0 +1,53 @@
+---
+layout: default
+title: Home
+---
+
+<section id="aboutme">
+<p>This is my Deryk. It's a simple (and fast) Jekyll theme based originally on Derek Sivers' blog theme.
+	
+
+</p>
+	
+<h2>
+	What's Included
+</h2>
+<p>
+	<ul><li>Breadcrumbs on pages</li>
+  <li>Passes the Pingdom speed test with a score of 100%</li>
+  <li>Simple design makes customizations simple.</li>
+  <
+	
+
+	</p>
+  
+  </section>
+	
+<section id="newestarticles">
+<h2>Newest Articles <small><a href="/archive">see all</a></small></h2>
+	
+	<p style="
+    background: lightyellow;
+">New posts will show up in a list below.</p>
+	<ul class="posts" style="
+    list-style: none;
+    padding-left: 0;
+">
+	  {% for post in site.posts %}
+	    <li><a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	  {% endfor %}
+	</ul>
+</section>		
+	
+
+	<section>
+<h2>A Sample Section</h2>
+<dl>
+	<dt><a href="/">Atlas Shrugged</a> <span class="small">(1957)</span></dt>
+	<dd>Use the HTML in this section to style your pages.</dd>
+</dl>
+	
+		
+</section>
+	
+	
